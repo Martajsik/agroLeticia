@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.agriguia">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".Info"></activity>
+        <activity android:name=".Mapas" />
+        <activity android:name=".Mapa" />
+        <activity android:name=".Conversa" />
+        <activity android:name=".Chat" />
+        <activity android:name=".InformacaoDosProdutores" />
+        <activity android:name=".Produtores" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Cadastro" />
+        <activity android:name=".Entrar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

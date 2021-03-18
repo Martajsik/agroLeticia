@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cadastro"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-41dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tvEntrar"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/greeny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Nova Conta"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnVoltar_cadastro" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:text="Insira seus dados para criar uma conta."
+                android:textColor="@color/greeny"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEntrar" />
+
+            <EditText
+                android:id="@+id/edtEmail_cadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/greeny"
+                android:backgroundTint="#8F3A9F3F"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="32dp"
+                android:hint="E-mail*"
+                android:textColorHint="#8F3A9F3F"
+                app:layout_constraintEnd_toEndOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+            <EditText
+                android:id="@+id/edtSenha_cadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/greeny"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#8F3A9F3F"
+                android:layout_marginEnd="32dp"
+                android:hint="Senha*"
+                android:textColorHint="#8F3A9F3F"
+                app:layout_constraintEnd_toEndOf="@+id/edtEmail_entrar"
+                app:layout_constraintStart_toStartOf="@+id/edtEmail_cadastro"
+                app:layout_constraintTop_toBottomOf="@+id/edtEmail_cadastro" />
+
+
+            <EditText
+                android:id="@+id/edtNome_cadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:textColor="@color/greeny"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#8F3A9F3F"
+                android:layout_marginEnd="32dp"
+                android:hint="Nome Completo*"
+                android:textColorHint="#8F3A9F3F"
+                app:layout_constraintEnd_toEndOf="@+id/edtSenha_cadastro"
+                app:layout_constraintStart_toStartOf="@+id/edtSenha_cadastro"
+                app:layout_constraintTop_toBottomOf="@+id/edtSenha_cadastro" />
+
+
+            <EditText
+                android:id="@+id/edtCPF_cadastro"
+                android:textColor="@color/greeny"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#8F3A9F3F"
+                android:layout_marginEnd="32dp"
+                android:maxLength="14"
+                android:hint="CPF"
+                android:textColorHint="#8F3A9F3F"
+                app:layout_constraintEnd_toEndOf="@+id/edtNome_cadastro"
+                app:layout_constraintStart_toStartOf="@+id/edtNome_cadastro"
+                app:layout_constraintTop_toBottomOf="@+id/edtNome_cadastro" />
+
+
+            <Button
+                android:id="@+id/btnContinuar_cadastro"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/redondo"
+                android:backgroundTint="@color/greeny"
+                android:text="Criar conta"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spnSexo_cadastro" />
+
+            <ImageButton
+                android:id="@+id/btnVoltar_cadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/circulo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/abc_vector_test" />
+
+            <Spinner
+                android:id="@+id/spn55_cadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="36dp"
+                android:backgroundTint="@color/greeny"
+                android:popupBackground="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtCPF_cadastro" />
+
+            <EditText
+                android:id="@+id/edtTelefone_cadastro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#8F3A9F3F"
+                android:ems="10"
+                android:textColor="@color/greeny"
+                android:hint="Telefone"
+                android:inputType="phone"
+                android:textColorHint="@color/greeny"
+                app:layout_constraintEnd_toEndOf="@+id/edtCPF_cadastro"
+                app:layout_constraintStart_toEndOf="@+id/spn55_cadastro"
+                app:layout_constraintTop_toBottomOf="@+id/edtCPF_cadastro" />
+
+
+            <Spinner
+                android:id="@+id/spnSexo_cadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="@color/greeny"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtNascimento_cadastro" />
+
+
+            <EditText
+                android:id="@+id/edtNascimento_cadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#8F3A9F3F"
+                android:layout_marginEnd="32dp"
+                android:maxLength="10"
+                android:textColor="@color/greeny"
+                android:hint="Data de Nascimento"
+                android:textColorHint="#8F3A9F3F"
+                app:layout_constraintEnd_toEndOf="@+id/edtTelefone_cadastro"
+                app:layout_constraintStart_toStartOf="@id/spn55_cadastro"
+                app:layout_constraintTop_toBottomOf="@+id/edtTelefone_cadastro" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
